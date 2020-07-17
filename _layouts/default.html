@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body id="page-top">
+<body>
 
+  {% if site.google-analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+
+  {% include header.html %}
+  <!-- begin content -->
+  <main class="content" aria-label="Content">
+    <!-- begin wrapper-page -->
+    <div class="wrapper-page">
       {{ content }}
+    </div>
+    <!-- end wrapper-page -->
+  </main> 
+  <!-- end content -->
 
-	  {% include footer.html %}
+  <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+  
+  {% include footer.html %}
+  
+  {% include javascripts.html %}
+</body>
 
-	  <!-- Bootstrap core JavaScript -->
-	  <script src="assets/js/jquery.min.js"></script>
-	  <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-	  <!-- Plugin JavaScript -->
-	  <script src="assets/js/jquery.easing.min.js"></script>
-
-	  <!-- Contact form JavaScript -->
-	  <script src="assets/js/jqBootstrapValidation.js"></script>
-	  <script src="assets/js/contact_me.js"></script>
-
-	  <!-- Custom scripts for this template -->
-	  <script src="assets/js/agency.min.js"></script>
-
-  </body>
 </html>

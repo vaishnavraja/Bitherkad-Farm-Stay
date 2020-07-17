@@ -1,124 +1,104 @@
-# Agency Jekyll Theme | [Live Demo](https://raviriley.github.io/agency-jekyll-theme-starter/)
-[![RubyGems Downloads](https://img.shields.io/gem/dt/jekyll-agency.svg)](https://rubygems.org/gems/jekyll-agency)
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/raviriley/agency-jekyll-theme/blob/master/LICENSE.txt)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/raviriley)
-[![template button](https://img.shields.io/badge/-Generate%20theme%20from%20template-brightgreen)](https://github.com/raviriley/agency-jekyll-theme-starter/generate)
-[![Featured on Jekyll-Themes.com](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/agency-jekyll-theme/)
+# Reked is a minimal and responsive blog theme for Jekyll. It is focused on the content, speed, simplicity
 
-![screenshot](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme/master/screenshot.PNG)
+### Features
 
-This is the [Agency Bootstrap theme](https://startbootstrap.com/themes/agency/) converted to a gem-based Jekyll theme with GitHub Pages support. While this had been done before, ([here](https://github.com/y7kim/agency-jekyll-theme), [here](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency), and [here](https://github.com/laklau/agency-jekyll-theme/)), these are outdated and have not been updated or maintained for years. I built this theme from the most recent Bootstrap source. I also added a lot of new features that go beyond the original theme's capabilities:
+* 100% responsive and clean theme
+* Optimized for mobile devices
+* Minimal design
+* Valid HTML5 code
+* Post sharing
+* Image Zoom
+* MailChimp Form Widget
+* Supports Disqus Comments
+* Supports Google Analytics
+* Ionicons
+* Google Fonts
 
-- GitHub Pages support
-- [template repo][template] to get up and running in minutes
-- contact form functionality powered by [Formspree.io](https://formspree.io)
-- custom pages
-- 404 page
-- legal/Privacy Policy page
-- Google Analytics support
-- Markdown support
-- custom images
-- logo support (instead of just title text)
-- automatically updating copyright years
-- custom navigation bar, even without the header image(s)
-- customizable footer
-- custom accent color and dark/light colors
-- horizontal scrolling support for client section
-<!-- 
-- custom colors with automatic gradient generation (coming soon)
-- site title logo text font customization (coming soon)
-- horizontal scrolling support for portfolio section (coming soon)
-- about section (different from the timeline) -->
+* * *
 
-The Jekyll structure of this theme includes:
+### Demo
 
-- `_portfolio` files - what generate the portfolio grid. YAML front matter handles all the details
-- the `page` layout allows custom pages, as seen in the legal and 404 pages
-- `sitetext.yml` enables complete customization of all site text
-- `navigation.yml` enables fully customizable navigation
-- `style.yml` enables fully customizable colors, background images, and other style-related things
+Check the theme in action [Demo](https://reked.netlify.com/)
 
+The main page would look like this:
 
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/raviriley) to continue developing and maintaining it.**
+![Main page preview](https://github.com/artemsheludko/reked/blob/master/images/reked-preview.jpg?raw=true)
 
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/raviriley)
+* * *
 
-## Installation
-There are three ways to install this theme:
-1. As a gem-based theme
-2. Use the [starter template][template]  (best for GitHub Pages)
-3. As a remote theme
+### Deployment
 
-#### 1. Gem-based Theme Installation
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
 
-Add this line to your Jekyll site's `Gemfile`:
+I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
-```ruby
-gem "jekyll-agency"
-```
+## Stackbit
 
-Then, replace the contents of your `_config.yml` file with [this](https://github.com/raviriley/agency-jekyll-theme/blob/master/_config.yml).
+This theme is ready to import into Stackbit. It can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS, Sanity or Contentful.
 
-And then execute:
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/artemsheludko/reked)
 
-    $ bundle
+* * *
 
-Or, install it yourself as:
+### Posts
 
-    $ gem install jekyll-agency
+To create a new post, you can create a new markdown file inside the \_posts directory by following the [recommended file structure](https://jekyllrb.com/docs/posts/#creating-post-files).
 
-#### 2. Using the [Starter Template][template]
-This is the fastest and easiest way to get up and running on GitHub Pages.
-Simply generate your own repository by clicking the button below, then replace the sample content with your own and configure for your needs.
-
-[![template button](https://img.shields.io/badge/-Create%20repository%20from%20template-brightgreen)](https://github.com/raviriley/agency-jekyll-theme-starter/generate)
-
-#### 3. Remote Theme Installation
-
-Replace the contents of your `_config.yml` file with [this](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/_config.yml) and your `Gemfile` with [this](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/Gemfile). Then execute:
-
-    $ bundle
+      ---
+      layout: post
+      title: "Welcome to Jekyll!"
+      date: 2018-08-23 16:04:00 +0300
+      image: 03.jpg
+      tags: Jekyll
+      ---
 
 
-[template]: https://github.com/raviriley/agency-jekyll-theme-starter
+You can set the tags and the post image.
 
-<!--
-## Documentation and Usage
+Add post images to **/images/** directory.
 
-**TODO:** Write usage instructions here. Describe available layouts, includes, or assets.
+For tags, try to not add space between two words, for example, `Ruby on Rails`, could be something like (`ruby-on-rails`, `Ruby_on_Rails`, or `Ruby-on-Rails`).
 
-navheader is used only for the home page. nav is used everywhere else.
+* * *
 
-Layouts:
+### Disqus Comments
 
-Includes:
+Reked Theme comes with Disqus comments enabled.
 
--->
+Open `_config.yml` file, and change the `mr-brown` value on line 30 with your [Disqus account shortname](https://help.disqus.com/customer/portal/articles/466208).
 
-## Contributing
+      Comment Section (Disqus)
+      disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
-This project is intended to be a welcoming space for collaboration. If you have an idea, suggestion, feature request, etc., feel free to open an issue or pull request.
-For bug reports, follow the provided template.
 
-#### Improvements - Up for Grabs
+That’s all you need to setup Disqus from the theme side. If you get any issue regarding that comments are unable to load. First, make sure you have [registered your website with Disqus (Step 1)](https://help.disqus.com/customer/portal/articles/466182-publisher-quick-start-guide).
 
-- multiple language support
-- customizable background coloring for each section
-- ~~custom background images~~
+And also check [Disqus troubleshooting guide](https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22) if you still have issues.
 
-## Development
+* * *
 
-To set up your environment to develop this theme, [clone this repo](https://github.com/raviriley/agency-jekyll-theme.git), then run `bundle install`. To test the theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
+### Google Analytics
 
-## License
+To integrate Google Analytics, open `_config.yml`, and add your Google Analytics identifier.
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+    # Google Analytics
+    google-analytics: \# Add your identifier. For example UA-99631805-1
 
-<!--
 
-## Example Implementations
+* * *
 
-- [CV Enterprises](https://cventerprises.org)
-- [Mortazavi Lab at UC Irvine](https://mortazavilab.github.io/)
+### Update favicon
 
--->
+You can find the current favicon (favicon.ico) inside the theme root directory, just replace it with your new favicon.
+
+* * *
+
+### License
+
+Mit License
+
+* * *
+
+### Support
+
+If you’d like to support me so I can continue to provide free content and themes you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.

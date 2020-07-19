@@ -1,8 +1,6 @@
 title: Baldev Plantation Lodge | Bitherkad Farms Stay
 logo: "images/logo-01.png" # You can add own logo image.
 description: Baldev Plantation Lodge
-
-
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "" # The base hostname & protocol for your site, e.g. http://example.com
 
